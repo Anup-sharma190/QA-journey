@@ -1,0 +1,7 @@
+VALUES = [1, 2,"RAHUL",4, 5]
+
+# list list is a data typeof multiple values of different data type
+
+
+
+print(VALUES[0])
