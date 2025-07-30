@@ -12,8 +12,12 @@
 #except:
     #print("try block fail")
 try:
-    with open("popup1.txt", "r") as reader:
+    with open("popup.txt", "r") as reader:
         reader.read()
 except Exception as e:
     print(e)
+finally:
+    print("all done ")
+
+
 
