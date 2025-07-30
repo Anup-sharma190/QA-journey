@@ -3,4 +3,13 @@ how are you?
 Hope you are enjoying this course.
 This exercises are designed to soldify your learning.
 happy learning!
+# Open the file in read mode
+with open("file1.txt", "r") as file:
+    # Read lines into a list
+    lines = file.readlines()
 
+# Count the number of lines
+line_count = len(lines)
+
+# Print the result
+print(f"Total number of lines: {line_count}")
