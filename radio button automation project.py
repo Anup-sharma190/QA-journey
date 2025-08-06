@@ -13,4 +13,11 @@ for checkbox in checkboxes:
         assert checkbox.is_selected()
         break
 print("all done maska")
-
+#---------------
+radioButtons = driver.find_elements(By.CSS_SELECTOR,".radioButton")
+radioButtons[2].click()
+assert radioButtons[2].is_selected# to cr
+assert driver.find_element(By.ID,"displayed-text").is_displayed()
+driver.find_element(By.ID, "hide-textbox").click()
+assert not (driver.find_element(By.ID,"displayed-text").is_displayed())# osscheck weather option 2
+time.sleep(20)
