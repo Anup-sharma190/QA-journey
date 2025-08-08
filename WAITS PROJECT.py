@@ -14,5 +14,10 @@ time.sleep(2)
 results= driver.find_elements(By.XPATH,"//div[@class='products']/div")
 count= len(results)
 print(count)
-assert count > 0
+assert count >
+#...........................
+for result in results:
+    result.find_element(By.XPATH,"div/button").click()
+
+
 
